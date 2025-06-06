@@ -7,6 +7,28 @@ function colors(color) {
   // Si no es ninguno de esos colores           --> "Color not found".
   // PISTA: utilizar el statement SWITCH.
   // Tu código:
+  if(color=="blue"|| color=="red" || color=="green" || color=="orange")
+  {
+    switch(color)
+    {
+      case "blue":
+        return "This is blue";
+        break;
+      case "red":
+        return "This is red";
+      case "green":
+        return "This is green";
+        break;
+      case "orange":
+        return "This is orange";
+        break;
+    }
+    
+
+  }
+  else {
+    return "Color not found";
+  }
 }
 
 module.exports = colors;

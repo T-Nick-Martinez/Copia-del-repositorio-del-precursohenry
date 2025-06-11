@@ -1,23 +1,24 @@
 function invertirArray(array) {
   // Invierte el arreglo array recibido por argumento.
   // Tu código:
-}
-
-var array=["comida", "documentos", "ropa", "juguetes", "higiene"];
-var lastof = [];
+/*let firstthelast = [];
+let cant = (array.length)-1;
 console.log(array);
-//console.log (lastof);
-
-var long= (array.length)-1;
-var i=0
-do {
-  lastof= [lastof + " " + (array.pop())]
-  i= i +1;
-  console.log(lastof);
-
+for(let i= cant; i>=0; i--)
+{
+firstthelast.push(array[i]);
 }
-while(i<=long)
-  var arregloinvertido = lastof.split(" ");
-  console.log(arregloinvertido)
-  console.log(lastof);
+return firstthelast; */ 
+//voy a probar con .reverse, lo encontre recien!
+ 
+
+
+array.reverse();
+return array;
+
+  }
+
+
+
+
 module.exports = invertirArray;

@@ -9,17 +9,14 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
   // PorcentajeDeDescuento ---> 0.2
   // Precio final ---> 8
   // Tu código:
+   objetoProducto["calcularPrecioDescuento"]= function(){
+    let preciofinal= this.precio - (this.precio *this.porcentajeDeDescuento);
+    return preciofinal;
+   }
+  return objetoProducto;
 
-  let resultado=0;
-  objetoProducto["calcularPrecioDescuento"] = function () {
-  let precio = objetoProducto["precio"];
-  let dto= objetoProducto["porcentajeDeDescuento"];
-    resultado = precio *descuento;
-  }
-  
-  return resultado;
-  
 }
-
 module.exports = agregarMetodoCalculoDescuento;
 //objetoProducto ={"precio"=algo, "porcentajeDescuento": algo, }
+
+//bueno, hice varios intentos, pero me retorna que no esta definido y Q_Q 

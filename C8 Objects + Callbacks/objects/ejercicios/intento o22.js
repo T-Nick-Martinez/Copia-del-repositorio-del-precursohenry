@@ -1,5 +1,3 @@
-const { flushSync } = require("react-dom");
-
 function esAnagrama(str1, str2) {
    // La función recibe dos argumentos "str1" y "str2" que son strings.
    // Determina si los dos strings son anagramas.
@@ -7,7 +5,7 @@ function esAnagrama(str1, str2) {
    // IMPORTANTE: Un anagrama es una palabra que se forma
    // con las mismas letras que otra, pero en orden diferente.
    // Tu código:
-   let a=""
+let a=""
 let b=""
 let contadorin=0;
    if(str1===str2)
@@ -38,6 +36,10 @@ let contadorin=0;
     else{
         return false
     }    
+
 }
 
-module.exports = esAnagrama;
+str1= "hola amigb"
+str2= "aloh amigo"
+let al= esAnagrama(str1,str2)
+console.log (al);
